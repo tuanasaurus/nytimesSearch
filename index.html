@@ -3,25 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NyTimesSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
-    <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="row">
+        <div class="jumbotron bg-info col-12">
+         <h1 class="display-4 text-center">New York Times Search</h1>
     
+        </div>
+    </div>
+    <div class ="row border border-primary mb-2">
+        <div class= "col-12">
+        <form>
+            <div class="form-group col-12">
+            <label for="exampleInputEmail1">Search Term:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group col-12">
+                <label class= "record-count">Number of Records to Retrive:</label>
+                <select class="form-control"><option></option></select>
+                <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+            <div class="form-group col-12">
+                    <label class="start-year">Start Year (Optional): </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group col-12">
+                    <label class="end-year">End Year(Optional):</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>        
+            
+            <button type="submit" id= "search-btn" class="btn btn-primary ml-4 mb-2">Search</button>
+            <button type="submit" id= "clear-btn" class="btn btn-primary mb-2">Clear Results</button>
+        </form>
+    </div>
+</div>
+    <div class ="row border border-primary">
+            <div class="form-group col-12 pt-5 ml-2">
+                <label class="top-articles">Top Articles:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted"></small>
+                </div>        
+        
+        </div>
+    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
 </body>
 </html>
